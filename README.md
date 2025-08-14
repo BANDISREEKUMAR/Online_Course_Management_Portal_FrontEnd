@@ -31,6 +31,6 @@ Authentication is handled via **JWT** and API calls are made to the backend (Spr
 
 ## Running the frontend
 
-1. **Navigate to the frontend folder**
+1. **Navigate to the frontend folder And Run**
    ```bash
-   cd frontend
+   npm run dev
