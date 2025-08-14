@@ -1,45 +1,48 @@
-# Online_Course_Management_Portal
-A full-stack web application that allows students to browse and enroll in online courses, while admins can manage courses and monitor enrollments. The project features secure authentication, role-based access control, and course progress tracking.
+# Online Course Management Portal – Frontend
+
+This is the **frontend** of the Online Course Management Portal built with **React.js** using **Vite** for fast development and build times.  
+It provides user-facing pages such as **Register**, **Login**, **Course List**, **Course Detail**, **Student Dashboard**, and **Admin Dashboard**.  
+Authentication is handled via **JWT** and API calls are made to the backend (Spring Boot) using **Axios**.
 
 ---
 
 ## 🚀 Features
 
-- **User Authentication:** Student and Admin registration/login with JWT-based security and BCrypt password encryption.
-- **Course Catalog:** Browse courses with filtering by category and difficulty level; search by title or instructor.
-- **Admin Panel:** Admins can add, update, delete, activate/deactivate courses, and upload course thumbnails and video links (mock).
-- **Enrollment & Payment:** Students can enroll in courses after a simulated payment process.
-- **Progress Tracking:** Students can track their course progress, including videos watched and quiz scores.
+- Modern **React.js (Vite)** frontend
+- **JWT authentication** and route protection
+- **Responsive UI** with Material-UI/Custom CSS
+- Course catalog with filters and search
+- Student and Admin dashboards
+- Mock payment integration for enrollments
+- API service layer for backend communication
 
 ---
 
-## 🛠️ Tech Stack
+## 📦 Tech Stack
 
-| Component    | Technology                   |
-|--------------|------------------------------|
-| Frontend     | React.js, Axios, React Router |
-| Backend      | Java 17+, Spring Boot, Spring Security, Spring Data JPA, JWT |
-| Database     | MySQL                        |
-| Payment      | Mock Payment Integration     |
-
----
-
-## 📁 Project Structure
-
-online-course-portal/  
-├── frontend/   # React.js frontend application  
-└── backend/    # Spring Boot backend REST API  
+- **Frontend Framework:** React.js (Vite)
+- **UI Components:** Material-UI (MUI) / Custom CSS
+- **Routing:** React Router DOM
+- **HTTP Requests:** Axios
+- **State Management:** React Hooks / Context API
+- **Authentication:** JWT (JSON Web Token)
 
 ---
 
-## 📦 Setup & Installation
+## 📂 Project Structure
 
-### Backend
-
-1. Navigate to the `backend` folder.
-2. Change the RazorPay key and secret in the code fields.
-3. Configure your MySQL database and update the `application.properties` with your credentials.
-4. Run the Spring Boot application:
-   ```bash
-   ./mvnw spring-boot:run
-
+frontend/
+│
+├── public/ # Static files
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page components (Login, Register, etc.)
+│ ├── services/ # API call functions (Axios)
+│ ├── App.jsx # Root app component
+│ ├── main.jsx # Entry point
+│ └── styles/ # CSS files
+│
+├── .env # Environment variables
+├── package.json
+├── vite.config.js
+└── README.md
