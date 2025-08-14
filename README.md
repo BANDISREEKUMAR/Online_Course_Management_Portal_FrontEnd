@@ -29,20 +29,8 @@ Authentication is handled via **JWT** and API calls are made to the backend (Spr
 
 ---
 
-## 📂 Project Structure
+## Running the frontend
 
-frontend/
-│
-├── public/ # Static files
-├── src/
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Page components (Login, Register, etc.)
-│ ├── services/ # API call functions (Axios)
-│ ├── App.jsx # Root app component
-│ ├── main.jsx # Entry point
-│ └── styles/ # CSS files
-│
-├── .env # Environment variables
-├── package.json
-├── vite.config.js
-└── README.md
+1. **Navigate to the frontend folder**
+   ```bash
+   cd frontend
